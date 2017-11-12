@@ -1,0 +1,25 @@
+
+{
+"name": "Invitation extension for facebook",
+"version": "1.0",
+"manifest_version":2,
+"description": "Sending invitation request to like your page",
+"browser_action": {
+"default_title":"Invity",
+"default_icon": "icon.png"
+},
+/*"options_page": "options.html",*/
+"permissions": [
+    "tabs", "<all_urls>"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
